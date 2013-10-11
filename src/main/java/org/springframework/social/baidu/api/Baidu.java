@@ -11,6 +11,7 @@ import org.springframework.social.oauth2.AbstractOAuth2ApiBinding;
  * 
  */
 public class Baidu extends AbstractOAuth2ApiBinding implements ApiBinding {
+	private String accessToken;
 
 	public Baidu() {
 		super();
@@ -18,6 +19,14 @@ public class Baidu extends AbstractOAuth2ApiBinding implements ApiBinding {
 
 	public Baidu(String accessToken) {
 		super(accessToken);
+		this.accessToken = accessToken;
+	}
+
+	/**
+	 * @return the accessToken
+	 */
+	public String getAccessToken() {
+		return accessToken;
 	}
 
 }
