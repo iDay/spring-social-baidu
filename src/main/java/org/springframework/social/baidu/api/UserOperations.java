@@ -10,6 +10,6 @@ package org.springframework.social.baidu.api;
 public interface UserOperations {
 
 	User getLoggedInUser();
-	UserDetails getInfo(long uid);
+	UserInfo getInfo(long uid);
 
 }

@@ -12,10 +12,10 @@ import org.codehaus.jackson.annotate.JsonProperty;
  * 
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
-abstract class LoggedUserMixin {
+abstract class UserMixin {
 
 	@JsonCreator
-	public LoggedUserMixin(@JsonProperty("uid") long uid,
+	public UserMixin(@JsonProperty("uid") long uid,
 			@JsonProperty("uname") String uname,
 			@JsonProperty("portrait") String portrait) {
 	}
